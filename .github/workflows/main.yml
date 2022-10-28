@@ -1,0 +1,10 @@
+name: gitactionsdemo
+on: [push]
+jobs:
+  action_demo:
+    runs-on: ubuntu-latest
+    steps: 
+    - run: echo "hello world"
+    - run: pwd
+    - run: ls
+    - run: echo 'job status is ${{job.status}}

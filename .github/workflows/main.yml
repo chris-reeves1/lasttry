@@ -20,9 +20,9 @@ jobs:
       run: python python.py
   
   secret_demo:
-    env: 
-    - secret: ${{secrets.TEST_SECRET}}
     runs_on: ubuntu-latest
+    env: 
+      secret: ${{secrets.TEST_SECRET}}
     steps:
     - name: print secret
-    - run: echo $secret
+      run: echo $secret

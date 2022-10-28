@@ -7,4 +7,4 @@ jobs:
     - run: echo "hello world"
     - run: pwd
     - run: ls
-    - run: echo 'job status is ${{job.status}}
+    - run: echo 'job status is ${{job.status}}'

@@ -21,7 +21,7 @@ jobs:
   
   secret_demo:
     env: 
-      - secret: ${{secrets.TEST_SECRET}}
+    - secret: ${{secrets.TEST_SECRET}}
     runs_on: ubuntu-latest
     steps:
     - name: print secret

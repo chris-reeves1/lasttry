@@ -18,3 +18,11 @@ jobs:
       run: ls -al
     - name: run a python script
       run: python python.py
+  
+  secret_demo:
+    env: 
+      - secret: ${{secrets.TEST_SECRET}}
+    runs_on: ubuntu-latest
+    steps:
+    - name: print secret
+    - run: echo $secret
